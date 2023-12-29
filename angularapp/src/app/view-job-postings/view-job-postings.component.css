@@ -1,0 +1,61 @@
+.container {
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  /* margin-bottom: 20px; */
+justify-content: center;
+align-items: center;
+display: flex;
+
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.table th {
+  background-color: #343a40; /* Dark background color for table headers */
+  color: #ffffff; /* White text color for table headers */
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #f8f9fa; /* Alternate row background color */
+}
+
+.table tbody tr:hover {
+  background-color: #e2e6ea; /* Hover row background color */
+}
+
+.btn-danger {
+  background-color: #dc3545; /* Red color for "Mark Closed" buttons */
+  color: #ffffff; /* White text color for buttons */
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.btn-danger:hover {
+  background-color: #c82333; /* Darker red color on hover */
+}
+
+/* CSS for the green color */
+.mark-closed-enabled {
+  background-color: #4caf50; /* Green color */
+  color: #ffffff; /* White text color */
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+

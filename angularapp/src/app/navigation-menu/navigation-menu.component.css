@@ -1,0 +1,54 @@
+/* Navbar background color */
+.navbar {
+  background-color: #343a40; /* Dark background color */
+  display: flex;
+  justify-content: space-between; /* Center the content horizontally and distribute space evenly */
+  align-items: center; /* Center the content vertically */
+  padding: 10px 20px; /* Add padding to the navbar */
+  border-bottom: 4px solid #ffca28; /* Add a border at the bottom of the navbar */
+}
+
+/* Active link color */
+.active a {
+  color: #ffca28; /* Your desired color for active links */
+  font-weight: bold; /* Bold text for active links */
+}
+
+/* Navbar brand text */
+.navbar-brand {
+  color: #ffffff; /* White text color */
+  font-size: 24px; /* Adjust the font size as needed */
+  text-decoration: none;
+}
+
+/* Navbar links */
+.navbar-nav {
+  list-style-type: none; /* Remove bullets */
+  display: flex; /* Display links in a horizontal line */
+}
+
+.nav-item {
+  margin-right: 20px; /* Add spacing between links */
+}
+
+.nav-link {
+  color: #ffffff; /* White text color */
+  font-weight: bold; /* Bold text */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+/* Change the color of links on hover */
+.nav-link:hover {
+  color: #ffca28; /* Yellow color on hover */
+}
+
+/* Navbar toggle button color */
+.navbar-toggler-icon {
+  background-color: #ffffff; /* White color for the toggle icon */
+}
+
+/* Navbar toggle button color on hover */
+.navbar-toggler-icon:hover {
+  background-color: #ffca28; /* Yellow color on hover */
+}

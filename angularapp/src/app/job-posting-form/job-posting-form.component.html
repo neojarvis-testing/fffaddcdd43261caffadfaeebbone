@@ -1,0 +1,30 @@
+<div class="container">
+  <h2>Create Job Posting</h2>
+  <form [formGroup]="jobPostingForm" (ngSubmit)="submitJobPosting()" class="form-bg">
+    <div class="form-group">
+      <label for="title">Job Title</label>
+      <input type="text" id="title" formControlName="title" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="department">Department</label>
+      <input type="text" id="department" formControlName="department" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="location">Location</label>
+      <input type="text" id="location" formControlName="location" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="responsibilities">Responsibilities</label>
+      <textarea id="responsibilities" formControlName="responsibilities" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="qualifications">Qualifications</label>
+      <textarea id="qualifications" formControlName="qualifications" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="applicationDeadline">Application Deadline</label>
+      <input type="date" id="applicationDeadline" formControlName="applicationDeadline" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

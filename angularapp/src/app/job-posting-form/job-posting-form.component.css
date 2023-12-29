@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 100vh;
+  /* margin-top: 20px; */
+  /* max-width: 600px; /* Adjust the maximum width as needed */
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center; /* Center the heading text */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-bg{
+
+width: 50%;
+}
+
+label {
+  font-weight: bold;
+  display: block; /* Ensures labels appear on a new line */
+  text-align: left; /* Align labels to the left */
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea.form-control {
+  resize: vertical; /* Allow vertical resizing for textareas */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Blue color for the submit button */
+  color: #ffffff; /* White text color for buttons */
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}

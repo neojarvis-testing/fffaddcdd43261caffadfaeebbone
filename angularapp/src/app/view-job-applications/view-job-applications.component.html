@@ -1,0 +1,30 @@
+<div class="container">
+  <h2 style="display: flex;">View Job Applications</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Applicant Name</th>
+        <th>Job Title</th>
+        <!-- <th>Status</th> -->
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let application of jobApplications" >
+        <td>{{ application.applicantName }}</td>
+        <td>{{ application.jobPosition.title }}</td>
+        <!-- <td>{{ application.status }}</td> -->
+        <td>
+          <select [(ngModel)]="application.status">
+            <option value="shortlist" [selected]="application.status === 'shortlist'">Shortlist</option>
+            <option value="reject" [selected]="application.status === 'reject'">Reject</option>
+            <option value="schedule" [selected]="application.status === 'schedule'">Schedule Interview</option>
+          </select>
+          <button (click)="changeStatus(application.id, application.applicantName, application.status)" class="btn btn-primary">Update Status</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+</div>

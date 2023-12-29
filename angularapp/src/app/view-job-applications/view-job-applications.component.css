@@ -1,0 +1,55 @@
+.container {
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  /* margin-bottom: 20px; */
+  justify-content: center;
+align-items: center;
+display: flex;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+table th {
+  background-color: #343a40; /* Dark background color for table headers */
+  color: #ffffff; /* White text color for table headers */
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #f8f9fa; /* Alternate row background color */
+}
+
+table tbody tr:hover {
+  background-color: #e2e6ea; /* Hover row background color */
+}
+
+select {
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background-color: #007bff; /* Blue color for "Update Status" buttons */
+  color: #ffffff; /* White text color for buttons */
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-left: 49px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}

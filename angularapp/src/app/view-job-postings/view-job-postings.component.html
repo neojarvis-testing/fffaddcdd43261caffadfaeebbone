@@ -1,0 +1,51 @@
+<div class="container">
+  <div><h2>View Job Postings</h2></div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Job Title</th>
+        <th>Department</th>
+        <th>Location</th>
+        <th>Responsibilities</th>
+        <th>Qualifications</th>
+        <th>Application Deadline</th>
+        <th>Total Applicants</th>
+
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let posting of jobPostings">
+        <td>{{ posting.title }}</td>
+        <td>{{ posting.department }}</td>
+        <td>{{ posting.location }}</td>
+        <td>{{ posting.responsibilities }}</td>
+        <td>{{ posting.qualifications }}</td>
+        <td>{{ posting.applicationDeadline | date }}</td>
+        <td>     {{ totalApplicantsMap[posting.id].length }}
+        </td>
+
+        <td>
+          <!-- <button (click)="markAsClosed(posting.id)" class="btn btn-danger">Mark Closed</button> -->
+          <!-- <button
+            (click)="markAsClosed(posting.id)"
+            class="btn"
+            [ngClass]="isMarkClosedDisabled[posting.id] ? 'btn-danger' : 'mark-closed-enabled'"
+            [disabled]="isMarkClosedDisabled[posting.id]"
+          >
+            Mark Closed
+          </button> -->
+          <button
+  (click)="markAsClosed(posting.id)"
+  class="btn"
+  [ngClass]="isMarkClosedDisabled[posting.id] ? 'btn-danger' : 'mark-closed-enabled'"
+  [disabled]="isMarkClosedDisabled[posting.id]"
+>
+  {{ isMarkClosedDisabled[posting.id] ? 'Closed' : 'Mark Closed' }}
+</button>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
