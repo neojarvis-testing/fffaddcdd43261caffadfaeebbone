@@ -1,3 +1,4 @@
 public class Demo {
-    System.out.println("Welocome");
+    System.out.println("Welcome");
+    System.out.println("Hi");
 }
